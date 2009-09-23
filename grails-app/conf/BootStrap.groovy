@@ -7,7 +7,9 @@ class BootStrap {
 		new CarBrand(brand:'Mitsubishi Motors').save()
 		new CarType(type:'Pickup').save()
 		new Engine(engine:'2,000 CC').save()		
-		new Engine(engine:'1,500 CC').save()				
+		new Engine(engine:'1,500 CC').save()	
+		new Gear(gear:'Automatic').save()
+		new Gear(gear:'Manual').save()
      }
      def destroy = {
      }
