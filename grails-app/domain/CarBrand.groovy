@@ -1,0 +1,5 @@
+class CarBrand {
+
+    static constraints = {
+    }
+}
