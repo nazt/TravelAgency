@@ -1,5 +1,5 @@
-class CarBrand {
-	String brand
+class Colour {
+	String colour
     static constraints = {
     }
 }

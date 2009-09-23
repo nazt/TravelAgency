@@ -1,5 +1,5 @@
-class CarBrand {
-	String brand
+class Fuel {
+	String fuel
     static constraints = {
     }
 }
