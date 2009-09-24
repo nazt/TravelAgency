@@ -126,6 +126,18 @@
                                 </td>
                             </tr> 
                         
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="reserved">
+                                    <g:message code="carStock.reserved.label" default="Reserved" />
+                                  </label>
+
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:carStockInstance,field:'reserved','errors')}">
+                                    <g:checkBox name="reserved" value="${carStockInstance?.reserved}" ></g:checkBox>
+                                </td>
+                            </tr> 
+                        
                         </tbody>
                     </table>
                 </div>

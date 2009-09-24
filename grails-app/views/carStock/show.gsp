@@ -104,6 +104,15 @@
                             
                         </tr>
                     
+                        <tr class="prop">
+                            <td valign="top" class="name">
+                               <g:message code="carStock.reserved.label" default="Reserved" />:
+                            </td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean:carStockInstance, field:'reserved')}</td>
+                            
+                        </tr>
+                    
                     </tbody>
                 </table>
             </div>
