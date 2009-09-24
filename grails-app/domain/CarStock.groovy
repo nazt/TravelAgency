@@ -1,0 +1,5 @@
+class CarStock {
+
+    static constraints = {
+    }
+}
