@@ -61,6 +61,15 @@
                     
                         <tr class="prop">
                             <td valign="top" class="name">
+                               <g:message code="carStock.gear.label" default="Gear" />:
+                            </td>
+                            
+                            <td valign="top" class="value"><g:link controller="gear" action="show" id="${carStockInstance?.gear?.id}">${carStockInstance?.gear?.encodeAsHTML()}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">
                                <g:message code="carStock.type.label" default="Type" />:
                             </td>
                             

@@ -68,6 +68,18 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="gear">
+                                    <g:message code="carStock.gear.label" default="Gear" />
+                                  </label>
+
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:carStockInstance,field:'gear','errors')}">
+                                    <g:select optionKey="id" from="${Gear.list()}" name="gear.id" value="${carStockInstance?.gear?.id}" ></g:select>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="type">
                                     <g:message code="carStock.type.label" default="Type" />
                                   </label>

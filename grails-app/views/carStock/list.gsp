@@ -30,9 +30,9 @@
                         
                    	        <th><g:message code="carStock.colour.label" default="Colour" /></th>
                    	    
-                   	        <th><g:message code="carStock.type.label" default="Type" /></th>
+                   	        <th><g:message code="carStock.gear.label" default="Gear" /></th>
                    	    
-                   	        <th><g:message code="carStock.engine.label" default="Engine" /></th>
+                   	        <th><g:message code="carStock.type.label" default="Type" /></th>
                    	    
                         </tr>
                     </thead>
@@ -48,9 +48,9 @@
                         
                             <td>${fieldValue(bean:carStockInstance, field:'colour')}</td>
                         
-                            <td>${fieldValue(bean:carStockInstance, field:'type')}</td>
+                            <td>${fieldValue(bean:carStockInstance, field:'gear')}</td>
                         
-                            <td>${fieldValue(bean:carStockInstance, field:'engine')}</td>
+                            <td>${fieldValue(bean:carStockInstance, field:'type')}</td>
                         
                         </tr>
                     </g:each>
