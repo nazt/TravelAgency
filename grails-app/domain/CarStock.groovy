@@ -2,6 +2,7 @@ class CarStock {
 	static belongsTo = [colour:Colour,brand:CarBrand,engine:Engine,fuel:Fuel,type:CarType,gear:Gear]
 	String model
 	String carRegistration
+	Boolean reserved
     static constraints = {
 		brand()
 		model()
@@ -11,5 +12,6 @@ class CarStock {
 		engine()
 		fuel()
 		carRegistration(nullable:false)		
+		reserved()
     }
 }
