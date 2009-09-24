@@ -1,4 +1,5 @@
 class Colour {
+	static hasMany = [carstock:CarStock]
 	String colour
     static constraints = {
     }

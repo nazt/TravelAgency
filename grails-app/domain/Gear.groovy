@@ -1,4 +1,5 @@
 class Gear {
+	static hasMany = [carstock:CarStock]
 	String gear
 	
     static constraints = {

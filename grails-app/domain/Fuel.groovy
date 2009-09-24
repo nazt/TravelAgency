@@ -1,4 +1,5 @@
 class Fuel {
+	static hasMany = [carstock:CarStock]
 	String fuel
     static constraints = {
     }

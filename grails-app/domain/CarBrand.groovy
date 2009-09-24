@@ -1,4 +1,5 @@
 class CarBrand {
+	static hasMany = [carstock:CarStock]
 	String brand
     static constraints = {
     }
