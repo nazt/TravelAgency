@@ -34,10 +34,64 @@
                     
                         <tr class="prop">
                             <td valign="top" class="name">
-                               <g:message code="carStock.color.label" default="Color" />:
+                               <g:message code="carStock.brand.label" default="Brand" />:
                             </td>
                             
-                            <td valign="top" class="value"><g:link controller="colour" action="show" id="${carStockInstance?.color?.id}">${carStockInstance?.color?.encodeAsHTML()}</g:link></td>
+                            <td valign="top" class="value"><g:link controller="carBrand" action="show" id="${carStockInstance?.brand?.id}">${carStockInstance?.brand?.encodeAsHTML()}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">
+                               <g:message code="carStock.model.label" default="Model" />:
+                            </td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean:carStockInstance, field:'model')}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">
+                               <g:message code="carStock.colour.label" default="Colour" />:
+                            </td>
+                            
+                            <td valign="top" class="value"><g:link controller="colour" action="show" id="${carStockInstance?.colour?.id}">${carStockInstance?.colour?.encodeAsHTML()}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">
+                               <g:message code="carStock.type.label" default="Type" />:
+                            </td>
+                            
+                            <td valign="top" class="value"><g:link controller="carType" action="show" id="${carStockInstance?.type?.id}">${carStockInstance?.type?.encodeAsHTML()}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">
+                               <g:message code="carStock.engine.label" default="Engine" />:
+                            </td>
+                            
+                            <td valign="top" class="value"><g:link controller="engine" action="show" id="${carStockInstance?.engine?.id}">${carStockInstance?.engine?.encodeAsHTML()}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">
+                               <g:message code="carStock.fuel.label" default="Fuel" />:
+                            </td>
+                            
+                            <td valign="top" class="value"><g:link controller="fuel" action="show" id="${carStockInstance?.fuel?.id}">${carStockInstance?.fuel?.encodeAsHTML()}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">
+                               <g:message code="carStock.carRegistration.label" default="Car Registration" />:
+                            </td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean:carStockInstance, field:'carRegistration')}</td>
                             
                         </tr>
                     

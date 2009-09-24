@@ -32,13 +32,85 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="color">
-                                    <g:message code="carStock.color.label" default="Color" />
+                                  <label for="brand">
+                                    <g:message code="carStock.brand.label" default="Brand" />
                                   </label>
 
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean:carStockInstance,field:'color','errors')}">
-                                    <g:select optionKey="id" from="${Colour.list()}" name="color.id" value="${carStockInstance?.color?.id}" ></g:select>
+                                <td valign="top" class="value ${hasErrors(bean:carStockInstance,field:'brand','errors')}">
+                                    <g:select optionKey="id" from="${CarBrand.list()}" name="brand.id" value="${carStockInstance?.brand?.id}" ></g:select>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="model">
+                                    <g:message code="carStock.model.label" default="Model" />
+                                  </label>
+
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:carStockInstance,field:'model','errors')}">
+                                    <input type="text" id="model" name="model" value="${fieldValue(bean:carStockInstance,field:'model')}"/>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="colour">
+                                    <g:message code="carStock.colour.label" default="Colour" />
+                                  </label>
+
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:carStockInstance,field:'colour','errors')}">
+                                    <g:select optionKey="id" from="${Colour.list()}" name="colour.id" value="${carStockInstance?.colour?.id}" ></g:select>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="type">
+                                    <g:message code="carStock.type.label" default="Type" />
+                                  </label>
+
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:carStockInstance,field:'type','errors')}">
+                                    <g:select optionKey="id" from="${CarType.list()}" name="type.id" value="${carStockInstance?.type?.id}" ></g:select>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="engine">
+                                    <g:message code="carStock.engine.label" default="Engine" />
+                                  </label>
+
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:carStockInstance,field:'engine','errors')}">
+                                    <g:select optionKey="id" from="${Engine.list()}" name="engine.id" value="${carStockInstance?.engine?.id}" ></g:select>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="fuel">
+                                    <g:message code="carStock.fuel.label" default="Fuel" />
+                                  </label>
+
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:carStockInstance,field:'fuel','errors')}">
+                                    <g:select optionKey="id" from="${Fuel.list()}" name="fuel.id" value="${carStockInstance?.fuel?.id}" ></g:select>
+                                </td>
+                            </tr> 
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="carRegistration">
+                                    <g:message code="carStock.carRegistration.label" default="Car Registration" />
+                                  </label>
+
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:carStockInstance,field:'carRegistration','errors')}">
+                                    <input type="text" id="carRegistration" name="carRegistration" value="${fieldValue(bean:carStockInstance,field:'carRegistration')}"/>
                                 </td>
                             </tr> 
                         

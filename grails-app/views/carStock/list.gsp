@@ -24,7 +24,15 @@
                         
                    	        <g:sortableColumn property="id" title="${message(code:'carStock.id.label', default:'Id')}" />
                         
-                   	        <th><g:message code="carStock.color.label" default="Color" /></th>
+                   	        <th><g:message code="carStock.brand.label" default="Brand" /></th>
+                   	    
+                   	        <g:sortableColumn property="model" title="${message(code:'carStock.model.label', default:'Model')}" />
+                        
+                   	        <th><g:message code="carStock.colour.label" default="Colour" /></th>
+                   	    
+                   	        <th><g:message code="carStock.type.label" default="Type" /></th>
+                   	    
+                   	        <th><g:message code="carStock.engine.label" default="Engine" /></th>
                    	    
                         </tr>
                     </thead>
@@ -34,7 +42,15 @@
                         
                             <td><g:link action="show" id="${carStockInstance.id}">${fieldValue(bean:carStockInstance, field:'id')}</g:link></td>
                         
-                            <td>${fieldValue(bean:carStockInstance, field:'color')}</td>
+                            <td>${fieldValue(bean:carStockInstance, field:'brand')}</td>
+                        
+                            <td>${fieldValue(bean:carStockInstance, field:'model')}</td>
+                        
+                            <td>${fieldValue(bean:carStockInstance, field:'colour')}</td>
+                        
+                            <td>${fieldValue(bean:carStockInstance, field:'type')}</td>
+                        
+                            <td>${fieldValue(bean:carStockInstance, field:'engine')}</td>
                         
                         </tr>
                     </g:each>
